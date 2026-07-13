@@ -5,13 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
-aiatti = 0 
-
+system_message = input("what attitude do you want the assistant to have?")
 def run_chat():
-    if aiatti == 0:
-        input("what attitude do you want the AI to have?")
-        system_message = input("what attitude do you want the AI to have?")
-        aiatti = 1
     print('You: (type exit to quit)')
     history = []
 

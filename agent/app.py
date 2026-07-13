@@ -11,10 +11,14 @@ def run_chat():
     history = []
 
     while True:
-        user_input = input('>> ')
+        user_input = input(f"turn {len(history)/2} >> ")
 
         if user_input.lower() == 'exit':
             break
+        if user_input.lower() == 'clear':
+            history = []
+            print('History cleared.')
+            continue
 
         history.append({'role': 'user', 'content': user_input})
         print('History:', history)
