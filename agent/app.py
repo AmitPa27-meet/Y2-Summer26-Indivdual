@@ -3,7 +3,6 @@ from anthropic import Anthropic
 from dotenv import load_dotenv
 
 load_dotenv()
-
 client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
 
 def run_chat():
@@ -18,7 +17,7 @@ def run_chat():
             break
 
         history.append({'role': 'user', 'content': user_input})
-
+        print('History:', history)
         response = client.messages.create(
             model='claude-haiku-4-5-20251001',
             max_tokens=300,
@@ -28,7 +27,7 @@ def run_chat():
             messages=history
         )
         
-
+        ##print(response)
         reply = response.content[0].text
         print(f'Claude: {reply}')
         history.append({'role': 'assistant', 'content': reply})
@@ -40,3 +39,9 @@ run_chat()
 ## if you ask it anything unclear unrelated to arts, it dismisses you.
 ## if its about art, it says its too philosophical and it cant help you with that.
 ## the difference than just using CHATGPT is that we can control the model to be whoever we want and how creative it wants to be with our codes!
+
+
+##lab 2 :
+## after turn 3, in the message history has 6 messages, 3 from the user and 3 from the assistant. 
+## the API needs the message history to retort back to it for memmory so it can remember what the user said and info, like name and such.
+## usuage.input_tokens mean that the user inputted a certain amout of tokens, and output_tokens means that the assistant outputted a certain amout of tokens.
