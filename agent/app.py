@@ -44,9 +44,24 @@ run_chat()
 ## if you ask it anything unclear unrelated to arts, it dismisses you.
 ## if its about art, it says its too philosophical and it cant help you with that.
 ## the difference than just using CHATGPT is that we can control the model to be whoever we want and how creative it wants to be with our codes!
-
+## reflection :
+## its like meet! meet is enjoyable because of the memmories you made with your friends in it.
+## meet is very stressful and full of pressure but its so amazing becuase of the fun and memmories you make with your friends!
+## without all these memmories meet would be bland and just a stress machine.
+##if you deleted the break in the "exit" line youll never break the loop therefore you will never be able to stop the program unless you close it manuanlly.
+## bug of the day - API not working at all stopping me from being able to use the AI i thought it didnt work and it didnt, im a wizard apparently.
 
 ##lab 2 :
 ## after turn 3, in the message history has 6 messages, 3 from the user and 3 from the assistant. 
 ## the API needs the message history to retort back to it for memmory so it can remember what the user said and info, like name and such.
 ## usuage.input_tokens mean that the user inputted a certain amout of tokens, and output_tokens means that the assistant outputted a certain amout of tokens.
+## reflection:
+## in the real world tthe price adds up quickly and quietly with anything really!
+## everywhere in the world right now everything gets more and more pricey, gas food and basic living resources
+## and without us noticing at first! only when you come to pay and notice the difference. 
+## if we delete the history printing, i dont think the AI will change since it stil has the history list. it does lose it, we just dont get to see it anymore!
+## after checking :
+## i was right!
+## so the calculation in the bonus isnt working, i dont know why, it says something about using becuase defing, im guessing  its something about the  loop placement...
+## after fixing, i needed to defy them  in the function for it to work !!!
+## the gap wasnt too big i was right with the guess just wrong where....
